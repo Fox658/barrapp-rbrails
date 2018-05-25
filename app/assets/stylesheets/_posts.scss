@@ -43,6 +43,32 @@
     }
   }
 }
+.posts.edit, .posts.new{
+  .card{
+    .card-body{
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      background-color: $light-gray;
+    }
+    .card-title{
+      margin-bottom: 0;
+      font-size: 18px;
+    }
+    .list-group-item{
+      padding: 10px;
+      input[type='text'], textarea{
+        font-size: 14px;
+        background-color:  $light-gray;
+      }
+      textarea{
+        height: 125px;
+      }
+      &:last-child {
+        background-color: $light-gray;
+      }
+    }
+  }
+}
 @media screen and (min-width: 34em){
   .posts.index .card{
     height: 440px;
