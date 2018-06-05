@@ -38,6 +38,7 @@ gem 'bootstrap', '~> 4.1.1'
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'friendly_id', '~> 5.1.0' # Note: You MUST use 5.0.0 or greater fpr Rails 4.0+
 gem 'annotate'
+gem 'will_paginate', '~> 3.1.0'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

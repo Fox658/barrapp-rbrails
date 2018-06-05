@@ -27,13 +27,17 @@ class Post < ApplicationRecord
     title_changed?
   end
   def display_day_published
-    "Publicado el #{published_at.strftime('%-d/%m/%Y')}"
+    if published_at.present?
+      "Publicado el #{published_at.strftime('%-d/%m/%Y')}"
+    else
+      "Aun no publicado."
+    end
   end
   def publish
     update(published: true, published_at: Time.now)
   end
   def unpublish
     update(published: false, published_at: nil)
-  end 
+  end
 
 end
